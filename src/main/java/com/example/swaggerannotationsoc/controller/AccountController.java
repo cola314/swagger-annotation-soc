@@ -9,8 +9,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api/v1/accounts")
-public class AccountController {
+public class AccountController implements AccountControllerDocs {
 
+    @Override
     @PostMapping
     public AccountResponse createAccount(CreateAccountRequest createAccountRequest) {
         throw new NotImplementedException();

@@ -21,5 +21,5 @@ public record CreateAccountRequest(
         int age,
 
         @NotNull
-        AccountType accountType) {
+        AccountType accountType) implements GetAccountRequestDocs {
 }
